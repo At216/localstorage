@@ -1,0 +1,14 @@
+<script>
+fetch('test.txt') //Let's see if it's automatically created
+    .then(response => response.text())
+    .then(data => {
+        // Here's your text file content
+        this.theStuff = data;
+        console.log(data)
+    })
+    .catch((error) => {
+        console.error('Error:', error);
+    });
+
+
+</script>
